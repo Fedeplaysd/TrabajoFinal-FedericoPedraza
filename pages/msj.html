@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENVIANOS UN MENSAJE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header class="Fondo">
+        <a href="../index.html"><img class="Logo" src="../img/f.jpg" alt="Logo"></a>
+        <button class="abrirMenu" id="abrir"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrarMenu" id="cerrar"><i class="bi bi-x-lg"></i></button>
+            <ul class="navList">
+
+                <li class="productos"><a href="prod.html">Productos</a></li>
+
+                <li class="mensajes"><a href="msj.html">Envianos un mensaje</a></li>
+
+                <li class="contrataciones"><a href="contrataciones.html">Contrataciones</li>
+
+                <li class="sitrecomendados"><a href="sitiosrecomendados.html">Sitios recomendados</a></li>
+
+                <li class="vidrecomendados"><a href="videosrecomendados.html">Videos recomendados</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="titulomsj text-center">
+                <h1>Envíanos tu consulta!</h1>
+                <h2>Estaremos muy contentos de responderte!</h2>
+                <h3>Por favor selecciona aquí el tipo de consulta que deseas realizar</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <p>Por favor elige uno de los siguientes, y luego escribe tus datos personales</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="consulta" id="check1">
+                        <label class="form-check-label" for="check1">CONSULTA</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="opinion" id="check2">
+                        <label class="form-check-label" for="check2">OPINIÓN</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="critica" id="check3">
+                        <label class="form-check-label" for="check3">CRÍTICA</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="otros" id="check4">
+                        <label class="form-check-label" for="check4">OTROS</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="form-control inputMsj" name="name" id="nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="nacimiento">Edad:</label>
+                            <input type="date" class="form-control inputMsj" name="datebirth" id="nacimiento">
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Email:</label>
+                            <input type="email" class="form-control inputMsj" name="mail" id="correo">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea class="form-control inputMsj" name="mensaje" id="mensaje" rows="5"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" 
+                            >Enviar</button>
+                            <button type="reset" >Limpiar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footerPaginasNoIndex">
+        <a href="../index.html"><button class="volver">Pagina principal</button></a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

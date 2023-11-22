@@ -1,0 +1,337 @@
+ /* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+ /*TERMINA IMPORTS */
+
+ /* VARIABLES */
+
+$color-body: #232D3F;
+$color-header: #303c52;
+$color-inputs: #a9b6ce;
+$color-desHis: #45474B;
+
+ /* TERMINA VARIABLES */
+
+ /*PARTES HTML */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $color-body;
+    font-family: 'Gabarito' , cursive;
+    color: white;
+    box-sizing: border-box;
+}
+header{
+    background-color: $color-header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-bottom: 10px;
+}
+input{
+    background-color: $color-inputs;
+    color: black;
+    border-radius: 10px;
+}
+textarea{
+    background-color: $color-inputs;
+    border-radius: 2.5px;
+}
+button{
+    background-color:$color-inputs ;
+    color: black;
+    border-radius: 2.5px;
+    margin: 2px;
+}
+
+ /*TERMINA PARTES HTML */
+
+ /* MENU HAMBURGUESA */
+
+.Logo{
+    max-width: 5rem;
+}
+.navList{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    li a {
+        text-decoration: none;
+        color: black;
+    }}
+.abrirMenu{
+    display: none;
+}
+.cerrarMenu{
+    display: none;
+    color: white;
+}
+@media screen and (max-width: 550px) {
+    .abrirMenu, 
+    .cerrarMenu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);.visible{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .navList{
+        flex-direction: column;
+        align-items: end;
+        li a{
+            color: white;
+        }
+    }}
+
+    /*TERMINA MENU HAMBURGUESA */
+
+    /* FOOTER BOTON VOLVER */
+
+.footerPaginasNoIndex{
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+}
+ /*TERMINA BOTON FOOTER */
+
+ /* INDEX */
+
+.barra{
+    display: flex;
+    justify-content: space-evenly;
+}
+.h3barra{
+    display: flex;
+    justify-content: center;
+    color: #D0D4CA;
+}
+.descripcion, .historia {
+    background-color: $color-desHis;
+}
+.experiencia{
+    background-color: $color-desHis;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 1.5px;
+    ol{
+        padding-left: 0;
+    }
+    ol li {
+        margin-bottom: 5px;
+        list-style-position: inside;
+        text-align: left;
+    }}
+
+ /* TERMINA INDEX */
+    
+ /* SECCION MENSAJES */
+
+.inputMsj{
+    background-color: $color-inputs;
+}
+
+ /*TERMINA SECCION MENSAJES */
+
+ /* SECCION PRODUCTOS */
+
+ .contenedorQueContieneTodo {
+    display: flex;
+    justify-content: center;
+ }
+
+ .textoCarruselProductos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+.contenedorItemsCarrusel{
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+    width: 480px;
+    overflow: hidden;
+    
+    a{
+        text-decoration: none;
+    }
+    img{
+
+        width: 100%;
+        height: 100%;     
+    }}
+.itemCarrusel{
+    height: 100%;
+    position: relative;
+}
+.tarjetaCarrusel{
+    height: 100%;
+}
+.flechasCarrusel{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+#contenedorPuntos{
+    display: flex;
+    justify-content: space-around;
+    a{
+        font-size: 1.5em;
+        text-decoration: none;
+        font-style: none;
+        color: #D0D4CA;
+    }}
+
+
+ /* TERMINA PRODUCTOS */
+
+ /*SECCION CONTRATACIONES */
+
+.paginaContrataciones{
+    text-align: center;
+}
+.h1c, .h2c, .pc{
+    margin-bottom: 20px;
+}
+.checkboxes{
+    display: inline-block;
+    text-align: left;
+}
+.textareacontr{
+    display: inline-block;
+    width: 50%;
+}
+.areaTextoContrataciones{
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+}
+
+ /*TERMINA CONTRATACIONES */
+
+ /*SECCION SITIOS RECOMENDADOS */
+
+.sitiosRecomendados{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: $color-header;
+}
+.tituloSitiosRecomendados{
+    grid-column: 1 / -1;
+}
+.sitioRecomendado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+ /*TERMINA SITIOS RECOMENDADOS */
+
+ /* EMPIEZA VIDEOS RECOMENDADOS */
+
+.divPadreVr{
+    text-align: center;
+    margin-top: 50px;
+}
+.h1vr{
+    font-size: 36px;
+}
+.pvr{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 40px;
+}
+.video{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+#video1{
+    animation-name: desaparece;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+
+}
+#video2{
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+/*ANIMACION PAGINA DE VIDEOS*/
+.Fondo{
+    background-image: linear-gradient(135deg
+    ,#31737e, #318274fc, #768e3f, #5b4881,
+    #735fb0, #7055a2, #57a580);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+
+}
+@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 50% 100%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+}
+
+ /*TERMINA VIDEOS RECOMENDADOS */
